@@ -10,33 +10,20 @@
   display: flex;
 }
 
-.coulmn-third-first {
-  /* flex-basis: calc (100% / 4);
-  flex-wrap: wrap; */
+.column-three {
+  flex-basis: calc(100% / 3);
 }
 
-.column-second {
-  width: calc(100% / 3);
-}
-
-.column-third {
+.column-four {
   flex-basis: calc(100% / 4);
 }
 
-.column-fouth-postone {
+.column-two-third {
   width: 66%;
 }
 
-.column-fouth-posttwo {
+.column-one-third {
   width: 33%;
-}
-
-.column-fifth-postone {
-  width: 33%;
-}
-
-.column-fifth-posttwo {
-  width: 66%;
 }
 
 img {
