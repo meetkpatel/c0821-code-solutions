@@ -1,0 +1,44 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+.row {
+  display: flex;
+}
+
+.coulmn-third-first {
+  /* flex-basis: calc (100% / 4);
+  flex-wrap: wrap; */
+}
+
+.column-second {
+  width: calc(100% / 3);
+}
+
+.column-third {
+  flex-basis: calc(100% / 4);
+}
+
+.column-fouth-postone {
+  width: 66%;
+}
+
+.column-fouth-posttwo {
+  width: 33%;
+}
+
+.column-fifth-postone {
+  width: 33%;
+}
+
+.column-fifth-posttwo {
+  width: 66%;
+}
+
+img {
+  width: 100%;
+}
