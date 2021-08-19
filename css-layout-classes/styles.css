@@ -10,20 +10,16 @@
   display: flex;
 }
 
-.column-three {
+.column-third {
   flex-basis: calc(100% / 3);
 }
 
-.column-four {
+.column-fourth {
   flex-basis: calc(100% / 4);
 }
 
 .column-two-third {
   width: 66%;
-}
-
-.column-one-third {
-  width: 33%;
 }
 
 img {
