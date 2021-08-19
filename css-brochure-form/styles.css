@@ -1,0 +1,46 @@
+.form-div {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+h2 {
+  color: rgb(236, 92, 87);
+  text-align: center;
+  font-family: 'Brandon Grotesque';
+  font-weight: 500;
+}
+
+label {
+  margin-left: 10px;
+  font-family: 'Brandon Grotesque';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}
+
+button {
+  color: white;
+  background-color: rgb(236, 92, 87);
+  border-radius: 15px;
+  border: 1px solid rgb(236, 92, 87);
+  width: 84px;
+  height: 32px;
+  float: right;
+}
+
+select {
+  font-family: 'Brandon Grotesque';
+  font-size: 14px;
+  background-color: rgb(243, 243, 243);
+}
