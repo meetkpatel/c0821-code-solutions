@@ -1,8 +1,11 @@
 .container {
   width: 100%;
   height: 800px;
-  background-color: rgb(26, 150, 218);
   margin: auto;
+}
+
+.body {
+  background-color: rgb(26, 150, 218);
 }
 
 .row {
