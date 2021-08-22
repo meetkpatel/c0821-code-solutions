@@ -1,0 +1,190 @@
+.container {
+  width: 100%;
+  margin: auto;
+  height: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.logo-img {
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.logo-img-class {
+  flex-basis: 50%;
+  padding-left: 5%;
+  margin-bottom: 1%;
+}
+
+.nav-bar {
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: flex-end;
+}
+
+.hero-img-class {
+  height: 600px;
+  background: linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.3)), url('images/hero.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 4% 5%;
+}
+
+.hero-text {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 500px;
+  margin-left: 5%;
+  margin-top: 7%;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.hero-text p {
+  color: white;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+
+.hero-text button {
+  width: 160px;
+  height: 45px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.head-text {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.body-text {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.clinic-location {
+  /* width: 100%; */
+
+  /* border: 1px solid red; */
+  height: 500px;
+  background-color: rgb(250, 250, 250);
+}
+
+.column-one {
+  flex-basis: 100%;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  margin-bottom: 80px;
+}
+
+.column-one p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.column-two {
+  text-align: center;
+  flex-basis: calc(100% / 2);
+  color: rgb(110, 110, 110);
+}
+
+.column-two h3 {
+  font-family: 'Avenir', sans-serif;
+}
+
+.learn-more-column-two {
+  flex-basis: calc(100% / 2);
+  color: rgb(110, 110, 110);
+  margin: 1.5% 5%;
+}
+
+.learn-more-column-two button {
+  margin-top: 35px;
+  float: right;
+  height: 40px;
+  width: 160px;
+}
+
+.learn-more-button {
+  /* display: flex; */
+  background-color: rgb(41, 67, 99);
+  color: white;
+  border: none;
+  height: 35px;
+  width: 90px;
+  font-family: 'Avenir', sans-serif;
+  float: right;
+}
+
+.canvas-info {
+  height: 400px;
+  background-color: rgb(82, 83, 81);
+  color: white;
+  padding: 6% 5%;
+}
+
+.canvas-white-logo {
+  width: 60%;
+}
+
+.canvas-white-logo img {
+  width: 160px;
+  margin-bottom: 35px;
+}
+
+.canvas-info p {
+  line-height: 7px;
+  font-family: 'Avenir', sans-serif;
+}
+
+.canvas-links {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.a-canvaslink {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.blue-button {
+  background-color: rgb(41, 67, 99);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 35px;
+  width: 90px;
+  font-family: 'Avenir', sans-serif;
+  margin-top: 8px;
+}
+
+.footer-column {
+  flex-basis: 100%;
+  margin: 3% 5%;
+}
+
+hr {
+  border: 1px solid rgb(211, 211, 211);
+}
+
+a {
+  padding-top: 8px;
+  color: rgb(160, 160, 160);
+  text-decoration: none;
+  margin-right: 40px;
+  font-family: 'Avenir', sans-serif;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
