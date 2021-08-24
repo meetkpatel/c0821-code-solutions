@@ -20,14 +20,19 @@
   font-family: 'Karla', sans-serif;
 }
 
-.column-one {
-  text-align: center;
+.column-full {
   width: 100%;
 }
 
-.column-two {
-  display: flex;
+.center-text {
+  text-align: center;
+}
+
+.column-half {
   flex-basis: calc(100% / 2);
+}
+
+.column-margins {
   margin-right: 5%;
   margin-left: 5%;
 }
