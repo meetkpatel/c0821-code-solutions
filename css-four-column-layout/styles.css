@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-forth {
+  flex-basis: calc(100% / 4);
+  border: 1px solid red;
+}
+
+.padding-right-left-20 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-screen-size {
+  width: 270px;
+  height: 350px;
+}
