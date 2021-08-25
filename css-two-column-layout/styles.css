@@ -1,0 +1,56 @@
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.head-font-property {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.subhead-font-property {
+  margin-top: 40px;
+}
+
+.font-property {
+  font-family: 'Karla', sans-serif;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.column-half {
+  flex-basis: calc(100% / 2);
+}
+
+.column-margins {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+p {
+  color: rgb(100, 100, 100);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  background-color: transparent;
+  width: 150px;
+  height: 30px;
+  color: rgb(209, 76, 69);
+  border: 2px solid rgb(209, 76, 69);
+  margin-top: 40px;
+}
