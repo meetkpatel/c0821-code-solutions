@@ -1,0 +1,62 @@
+.font-DM-Sans {
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 1px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-fifth {
+  flex-basis: calc(100% / 5);
+  height: 600px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.column-fifth img {
+  height: 400px;
+  width: 100%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-gray-color {
+  color: lightgray;
+}
+
+.font-backgroud-color {
+  background-color: rgb(255, 241, 231);
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.line-through-lightgray {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+hr {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  height: 22px;
+  border: 1px solid lightgray;
+}
