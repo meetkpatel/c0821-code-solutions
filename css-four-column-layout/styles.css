@@ -1,0 +1,53 @@
+@import url(//db.onlinewebfonts.com/c/1533bd45ab1075446a39b88bfc72f065?family=Falling+Sky);
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  background-color: rgb(247, 248, 250);
+}
+
+.row {
+  display: flex;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-forth {
+  justify-content: center;
+  flex-basis: calc(100% / 4);
+}
+
+.padding-right-left-20 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-screen-size {
+  width: auto;
+  height: 450px;
+
+  /* object-fit: cover; */
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.falling-sky-font {
+  font-family: 'falling-sky', sans-serif;
+}
+
+.img-icon {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+}
