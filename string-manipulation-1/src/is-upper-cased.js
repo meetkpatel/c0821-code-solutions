@@ -1,7 +1,12 @@
 /* exported isUpperCased */
-
-// look at each character
-// find the ascii of current character
-// check if ascii calue of charater is more then or equal to 97
-//      if yes retuen false
-// if checking all ascii of character does noot have value more then 97 return true
+function isUpperCased(word) {
+  var capWord = word.toUpperCase();
+  if (capWord === word) {
+    return true;
+  }
+  return false;
+}
+// convert word to uppercase
+// check if word and converted word are same
+//      if yes retuen true
+// return false
