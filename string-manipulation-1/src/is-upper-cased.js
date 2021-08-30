@@ -1,12 +1,4 @@
 /* exported isUpperCased */
-function isUpperCased(word) {
-  for (var i = 0; i < word.length; i++) {
-    if (word[i].charCodeAt(0) >= 97) {
-      return false;
-    }
-  }
-  return true;
-}
 
 // look at each character
 // find the ascii of current character

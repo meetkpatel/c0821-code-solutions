@@ -1,25 +1,15 @@
 /* exported capitalize */
 
 function capitalize(word) {
-  var wordResult = '';
+  var newWord = '';
   for (var i = 0; i < word.length; i++) {
     if (i === 0) {
-      if (word[i].charCodeAt(0) >= 97) {
-        var capAsci = word[i].charCodeAt(0) - 32;
-        wordResult += String.fromCharCode(capAsci);
-      } else {
-        wordResult += word[i];
-      }
+      newWord += word[i].toUpperCase();
     } else {
-      if (word[i].charCodeAt(0) <= 90) {
-        var smallAsci = word[i].charCodeAt(0) + 32;
-        wordResult += String.fromCharCode(smallAsci);
-      } else {
-        wordResult += word[i];
-      }
+      newWord += word[i].toLowerCase();
     }
   }
-  return wordResult;
+  return newWord;
 }
 
 // create ouput storage
