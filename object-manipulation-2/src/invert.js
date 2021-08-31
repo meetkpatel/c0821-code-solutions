@@ -6,3 +6,7 @@ function invert(source) {
   }
   return newObj;
 }
+// create new empty object
+// go through each object of source
+// add current value and property to new object
+// retuen new object
