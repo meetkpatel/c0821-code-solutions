@@ -1,17 +1,10 @@
 /* exported omit */
 function omit(source, keys) {
   var newObj = {};
-  var tempCount = 0;
   for (var i in source) {
-    for (var j in keys) {
-      if (i === keys[j]) {
-        tempCount++;
-      }
-    }
-    if (tempCount === 0) {
+    if (keys.indexOf(i) === -1) {
       newObj[i] = source[i];
     }
-    tempCount = 0;
   }
   return newObj;
 }
