@@ -1,13 +1,9 @@
 /* exported pick */
 function pick(source, keys) {
   var newObj = {};
-  for (var i in source) {
-    for (var j = 0; j < keys.length; j++) {
-      if (keys[j] === i) {
-        if (typeof source[i] !== 'undefined') {
-          newObj[i] = source[i];
-        }
-      }
+  for (var j = 0; j < keys.length; j++) {
+    if (typeof source[keys[j]] !== 'undefined') {
+      newObj[keys[j]] = source[keys[j]];
     }
   }
   return newObj;
