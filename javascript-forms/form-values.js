@@ -1,5 +1,5 @@
-var msgData = {};
 function contactFormSubmit(event) {
+  var msgData = {};
   event.preventDefault();
   msgData.name = $contactForm.elements.name.value;
   msgData.email = $contactForm.elements.email.value;
