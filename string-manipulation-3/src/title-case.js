@@ -64,20 +64,19 @@ function strFourMore(string, dashDetect, colonChecker) {
       }
     }
     return temp;
-  }
-  if (string === 'javascript') {
+  } else if (string === 'javascript') {
     temp += 'JavaScript';
     return temp;
-  }
-  if (string === 'javascript:') {
+  } else if (string === 'javascript:') {
     temp += 'JavaScript:';
     return temp;
+  } else {
+    temp += string[0].toUpperCase();
+    for (var j = 1; j < string.length; j++) {
+      temp += string[j];
+    }
+    return temp;
   }
-  temp += string[0].toUpperCase();
-  for (var j = 1; j < string.length; j++) {
-    temp += string[j];
-  }
-  return temp;
 }
 
 function strThreeLess(string, dashDetect, colonChecker) {
@@ -86,23 +85,22 @@ function strThreeLess(string, dashDetect, colonChecker) {
   if (string === 'api') {
     temp += string.toUpperCase();
     return temp;
-  }
-  if (colonChecker === ':') {
+  } else if (colonChecker === ':') {
     temp += string[0].toUpperCase();
     for (var i = 1; i < string.length; i++) {
       temp += string[i];
     }
     return temp;
-  }
-  if (conjunctionsWords.indexOf(string) !== -1) {
+  } else if (conjunctionsWords.indexOf(string) !== -1) {
     temp += string;
     return temp;
+  } else {
+    temp += string[0].toUpperCase();
+    for (var j = 1; j < string.length; j++) {
+      temp += string[j];
+    }
+    return temp;
   }
-  temp += string[0].toUpperCase();
-  for (var j = 1; j < string.length; j++) {
-    temp += string[j];
-  }
-  return temp;
 }
 // create a function for string more than four charcter with three parameter (string, dashDetect, colonChecker)
 // create temp variable
