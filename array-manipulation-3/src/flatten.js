@@ -2,7 +2,7 @@
 function flatten(array) {
   var newArray = [];
   for (var i in array) {
-    if (typeof array[i] === 'object') {
+    if (Array.isArray(array[i]) === true) {
       for (var j in array[i]) {
         newArray.push(array[i][j]);
       }
@@ -15,7 +15,7 @@ function flatten(array) {
 
 // create an empty storage list
 // go through each element of the list provide in the input
-// check if the current element of list is object
+// check if the current element of list isarray
 //      if yes go throw each element of current object
 //      add current element to the created storage list
 // else add current element to the created storage list
