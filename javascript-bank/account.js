@@ -29,11 +29,8 @@ Account.prototype.getBalance = function () {
   for (var i = 0; i < this.transactions.length; i++) {
     if (this.transactions[i].type === 'deposit') {
       accountBalance += parseInt(this.transactions[i].amount);
-    }
-  }
-  for (var j = 0; j < this.transactions.length; j++) {
-    if (this.transactions[j].type === 'withdrawal') {
-      accountBalance -= parseInt(this.transactions[j].amount);
+    } else {
+      accountBalance -= parseInt(this.transactions[i].amount);
     }
   }
   return accountBalance;
