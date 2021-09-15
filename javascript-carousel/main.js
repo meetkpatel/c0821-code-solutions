@@ -10,9 +10,14 @@ $rightArrow.addEventListener('click', nextImg);
 $leftArrow.addEventListener('click', previousImg);
 $circleBtnEvent.addEventListener('click', circleBtnClick);
 
-var timerId = setInterval(nextImg, 3000);
+var timerId = setInterval(nextImgAuto, 3000);
 
-function nextImg() {
+function nextImgAuto() {
+  $img.setAttribute('src', imgArray[currentImgIndex]);
+  changeBtn(currentImgIndex);
+}
+
+function nextImg(event) {
   if (currentImgIndex === 4) {
     currentImgIndex = 0;
   } else {
@@ -20,9 +25,10 @@ function nextImg() {
   }
   $img.setAttribute('src', imgArray[currentImgIndex]);
   changeBtn(currentImgIndex);
+  intervalReset();
 }
 
-function previousImg() {
+function previousImg(event) {
   if (currentImgIndex === 0) {
     currentImgIndex = 4;
   } else {
@@ -30,6 +36,7 @@ function previousImg() {
   }
   $img.setAttribute('src', imgArray[currentImgIndex]);
   changeBtn(currentImgIndex);
+  intervalReset();
 }
 
 function circleBtnClick(event) {
@@ -39,9 +46,7 @@ function circleBtnClick(event) {
   changeBtn(event.target.getAttribute('circle-btn-id'));
   currentImgIndex = parseInt(event.target.getAttribute('circle-btn-id'));
   $img.setAttribute('src', imgArray[currentImgIndex]);
-
-  clearInterval(timerId);
-  timerId = setInterval(nextImg, 3000);
+  intervalReset();
 }
 
 function changeBtn(circleid) {
@@ -52,4 +57,9 @@ function changeBtn(circleid) {
       $circleBtnNodes[i].setAttribute('class', 'far fa-circle circle-btn');
     }
   }
+}
+
+function intervalReset() {
+  clearInterval(timerId);
+  timerId = setInterval(nextImg, 3000);
 }
