@@ -1,0 +1,48 @@
+.container {
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  border: 10px solid black;
+  margin-top: 7%;
+}
+
+.row {
+  display: flex;
+}
+
+.column-rightleft {
+  height: 450px;
+  width: 10%;
+}
+
+.column-middle-img {
+  height: 450px;
+  width: 90%;
+}
+
+img {
+  justify-content: center;
+}
+
+.column-full {
+  width: 100%;
+  height: 50px;
+}
+
+.arrow-size {
+  font-size: 3rem;
+}
+
+.img-btn {
+  font-size: 1.5rem;
+}
+
+i {
+  margin-right: 0.5rem;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
