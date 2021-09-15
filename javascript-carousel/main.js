@@ -11,8 +11,12 @@ $leftArrow.addEventListener('click', previousImg);
 $circleBtnEvent.addEventListener('click', circleBtnClick);
 
 var timerId = setInterval(nextImgAuto, 3000);
-
 function nextImgAuto() {
+  if (currentImgIndex === 4) {
+    currentImgIndex = 0;
+  } else {
+    currentImgIndex++;
+  }
   $img.setAttribute('src', imgArray[currentImgIndex]);
   changeBtn(currentImgIndex);
 }
@@ -61,5 +65,5 @@ function changeBtn(circleid) {
 
 function intervalReset() {
   clearInterval(timerId);
-  timerId = setInterval(nextImg, 3000);
+  timerId = setInterval(nextImgAuto, 3000);
 }
