@@ -1,13 +1,9 @@
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
 var cardSuit = ['clubs', 'diamonds', 'hearts', 'spades'];
-var additionalCard = ['Jack', 'Queen', 'King', 'Ace'];
+var cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'];
 
-var cardsInfo = {
-  cardsDeck: [],
-  cardUsed: []
-};
-
+var cardFullDeck = [];
 var players = [{
   name: 'player 1',
   hand: [],
@@ -28,42 +24,38 @@ var players = [{
 ];
 var temp = {};
 for (var i = 0; i < cardSuit.length; i++) {
-  for (var j = 2; j <= 10; j++) {
-    temp.rank = j;
-    temp.suit = cardSuit[i];
-    temp.cardValue = j;
-    cardsInfo.cardsDeck.push(temp);
-    temp = {};
-    if (j === 10) {
-      for (var k = 0; k < additionalCard.length; k++) {
-        temp.rank = additionalCard[k];
-        temp.suit = cardSuit[i];
-        if (additionalCard[k] === 'Ace') {
-          temp.cardValue = 11;
-        } else {
-          temp.cardValue = 10;
-        }
-        cardsInfo.cardsDeck.push(temp);
-        temp = {};
+  for (var j = 0; j < cards.length; j++) {
+    temp.card = cards[j] + ' of ' + cardSuit[i];
+    if (!isNaN(parseInt(cards[j]))) {
+      temp.cardValue = parseInt(cards[j]);
+    } else {
+      if (cards[j] === 'Ace') {
+        temp.cardValue = 11;
+      } else {
+        temp.cardValue = 10;
       }
     }
+    cardFullDeck.push(temp);
+    temp = {};
   }
 }
-shuffleDistribution();
-shuffleDistribution();
 
-function shuffleDistribution() {
-  for (var l = 0; l < players.length; l++) {
-    var randomNo = Math.floor(Math.random() * (51 - 0 + 1) + 0);
-    if (cardsInfo.cardUsed.indexOf(randomNo) === -1) {
-      cardsInfo.cardUsed.push(randomNo);
-      players[l].hand.push(cardsInfo.cardsDeck[randomNo].rank + ' of ' + cardsInfo.cardsDeck[randomNo].suit);
-      players[l].point += cardsInfo.cardsDeck[randomNo].cardValue;
-    } else {
-      l--;
-    }
+var shuffleDeck = _.shuffle(cardFullDeck);
+
+var playersCount = players.length;
+var currentCard = {};
+var currentCounter = 0;
+for (var k = 0; k < players.length * 2; k++) {
+  if (currentCounter === playersCount) {
+    currentCounter = 0;
   }
+  currentCard = shuffleDeck.pop();
+  players[currentCounter].hand.push(currentCard.card);
+  players[currentCounter].point += currentCard.cardValue;
+  currentCard = {};
+  currentCounter++;
 }
+
 var highestScore = 0;
 var highestScorePlayer = 0;
 var isDrew = false;
