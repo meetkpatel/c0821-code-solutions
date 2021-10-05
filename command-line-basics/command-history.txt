@@ -1,0 +1,500 @@
+  105  git switch master
+  106  clear
+  107  git switch javascript-bank
+  108  clear
+  109  git add javascript-bank
+  110  git commit -m "completed javascript-bank exercise."
+  111  git push origin javascript-bank
+  112  git switch master
+  113  cd repos/c0821-code-solutions/
+  114  git branch javascript-carousel
+  115  git switch javascript-carousel
+  116  clear
+  117  git add javascript-carousel
+  118  git commit -m "completed javascript-carousel exercise."
+  119  clear
+  120  git push origin javascript-carousel
+  121  git add javascript-carousel
+  122  git commit -m "completed javascript-carousel exercise."
+  123  git push origin javascript-carousel
+  124  git add javascript-carousel
+  125  git commit -m "done change and completed javascript-carousel exercise."
+  126  git push origin javascript-carousel
+  127  git switch javascript-bank
+  128  git add javascript-bank
+  129  git commit -m "removed extra loop from balance feature in account.js"
+  130  git push origin javascript-bank
+  131  clear
+  132  gti switch master
+  133  git switch master
+  134  clear
+  135  git switch object-manipulation-3
+  136  clear
+  137  git add object-manipulation-3
+  138  git commit -m "Changes done to object-manipulation-3"
+  139  git push origin object-manipulation-3
+  140  cd repos/
+  141  cd c0821-code-solutions/
+  142  clear
+  143  curl -sS https://lfz-static.s3-us-west-1.amazonaws.com/dev-environment/mac-installer.bash | bash
+  144  cd repos/c0821-code-solutions/
+  145  clear
+  146  git switch master
+  147  cd ..
+  148  clear
+  149  git clone git@github.com:meetkpatel/driving-game.git
+  150  cd driving-game/
+  151  clear
+  152  npm ci
+  153  git add index.html main.js styles.css 
+  154  git status
+  155  git commit -m "Completed issue 1"
+  156  git status
+  157  git push origin master
+  158  clear
+  159  git branch issue-2-user-can-turn-car
+  160  git switch issue-2-user-can-turn-car
+  161  clear
+  162  git status
+  163  dev-env
+  164  dev-env
+  165  '
+  166  exit
+  167  cd re
+  168  cd repos/
+  169  dev-env
+  170  clear
+  171  dev-env
+  172  whoami
+  173  clear
+  174  git log --oneline
+  175  cd repos/driving-game/
+  176  git switch master
+  177  git log --oneline
+  178  git checkout fae250753824d4f40a76f92d76e37e084122c609
+  179  git status
+  180  git checkout fae250753824d4f40a76f92d76e37e084122c609
+  181  git add .
+  182  git commit -m "Back to Start"
+  183  git push origin master
+  184  git switch master
+  185  git pull origin master
+  186  cleara
+  187  cler
+  188  clear
+  189  dev-env
+  190  whoami
+  191  cd ..
+  192  cd c0821-code-solutions/
+  193  dev-env
+  194  npm install chart.js
+  195  cd repos/
+  196  l
+  197  ls
+  198  cd Ajax-project/
+  199  npm install chart.js
+  200  clear
+  201  npm ci
+  202  npm ci
+  203  npm ci
+  204  dir
+  205  ls
+  206  pwd
+  207  cd repos/
+  208  pwd
+  209  ls
+  210  git clone git@github.com:meetkpatel/ajax-project.git
+  211  ls
+  212  cd ajax-project/
+  213  git branch issue-1-user-can-search
+  214  git status
+  215  git switch issue-1-user-can-search
+  216  clear
+  217  git add index.html css/ js/
+  218  git status
+  219  git status
+  220  git commit -m "Completed Issue 1"
+  221  git status
+  222  git add js/
+  223  git status
+  224  git commit -m "Completed Issue 1"
+  225  git commit -m "Completed Issue 1"
+  226  git add js/
+  227  clear
+  228  git status
+  229  git commit -m "Completed Issue 1"
+  230  git add js/
+  231  git commit -m "Completed Issue 1"
+  232  git add js/
+  233  git commit -m "Completed Issue 1"
+  234  git satus
+  235  git add js/
+  236  git status
+  237  git commit -m "Completed Issue 1"
+  238  git add js/
+  239  git commit -m "Completed Issue 1"
+  240  git push origin issue-1-user-can-search
+  241  git status
+  242  git add index.html css/ js/
+  243  git status
+  244  clear
+  245  git commit -m"Changes done to the issue 1"
+  246  clear
+  247  git add index.html css/ js/
+  248  git commit -m"Changes done to the issue 1"
+  249  clear
+  250  git add index.html css/ js/
+  251  git status
+  252  git commit -m"Changes done to the issue 1"
+  253  git status
+  254  git status
+  255  clear
+  256  git add index.html css/ js/
+  257  git status
+  258  git commit -m"Changes done to the issue 1"
+  259  clear
+  260  git status
+  261  git add css/ index.html js/
+  262  git commit -m"Changes done to the issue 1"
+  263  git add css/ index.html js/
+  264  git commit -m"Changes done to the issue 1"
+  265  git push origin issue-1-user-can-search
+  266  git switch master
+  267  clear
+  268  git pull origin master
+  269  clear
+  270  git branch issue-2-user-can-interact-with-graph
+  271  git switch issue-2-user-can-interact-with-graph
+  272  clear
+  273  git status
+  274  git add css/ js/ index.html 
+  275  git status
+  276  git commit -m "Completed issue 2"
+  277  git push origin issue-2-user-can-interact-with-graph
+  278  git switch master
+  279  clear
+  280  git pull origin master
+  281  clear
+  282  git branch issue-3-user-can-add-stock-to-watchlist
+  283  git switch issue-3-user-can-add-stock-to-watchlist
+  284  clear
+  285  clear
+  286  git status
+  287  git add js/ css/ index.html 
+  288  git status
+  289  git commit -m "watchlist generate with refresh"
+  290  git commit -m "watchlist generate with refresh"
+  291  git status
+  292  git status
+  293  git add js/
+  294  git commit -m "watchlist edit page still working on delete"
+  295  clear
+  296  git status
+  297  git add css/ index.html js/
+  298  git status
+  299  clear
+  300  git status
+  301  git commit -m "Completed Issue-3"
+  302  git status
+  303  git push origin issue-3-user-can-add-stock-to-watchlist
+  304  clear
+  305  git status
+  306  git add css/ index.html  js/
+  307  git status
+  308  git commit -m "All Changes done to issue 3"
+  309  git push origin issue-3-user-can-add-stock-to-watchlist
+  310  git status
+  311  git switch master
+  312  clear
+  313  git pull master origin
+  314  git pull origin master
+  315  clear
+  316  git branch issue-4-user-can-add-stock-to-portfolio
+  317  git switch issue-4-user-can-add-stock-to-portfolio
+  318  clear
+  319  git 
+  320  git add css/ index.html  js/
+  321  git status
+  322  git add issue-4-user-can-add-stock-to-portfolio
+  323  git commit -m "Completed Issue 4"
+  324  git push origin issue-4-user-can-add-stock-to-portfolio
+  325  git status
+  326  git add css/ index.html js/
+  327  git status
+  328  clear
+  329  git commit -m "removed alert added modal."
+  330  git push origin issue-4-user-can-add-stock-to-portfolio
+  331  git status
+  332  git switch master
+  333  git pull origin master
+  334  clear
+  335  git branch issue-5-user-can-see-P&L
+  336  git branch issue-5-user-can-see-Profit-loss
+  337  git switch issue-5-user-can-see-Profit-loss
+  338  git status
+  339  git add css/ index.html js/
+  340  git status
+  341  git status
+  342  gitt add js/
+  343  clear
+  344  git commit -m "Working on generating portfolio list."
+  345  clear
+  346  clear
+  347  clear
+  348  cd repos/ajax-project/
+  349  git status
+  350  git add css/ index.html js/
+  351  git commit -m "Completed Issue 5"
+  352  git push origin issue-5-user-can-see-Profit-loss
+  353  cd repos/ajax-project/
+  354  git status
+  355  hit push origin issue-5-user-can-see-Profit-loss
+  356  hit push origin issue-5-user-can-see-Profit-loss
+  357  git push origin issue-5-user-can-see-Profit-loss
+  358  cd repos/ajax-project/
+  359  clear
+  360  git status
+  361  git add js/
+  362  git commit -m "Removed  all comments."
+  363  git push origin issue-5-user-can-see-Profit-loss
+  364  cd repos/
+  365  cd ajax-project/
+  366  git status
+  367  git switch master
+  368  git pull origin master
+  369  git branch issue-6-user-can-see-history-of-stock
+  370  git switch issue-6-user-can-see-history-of-stock
+  371  clear
+  372  git status
+  373  git add css/ index.html js/
+  374  git status
+  375  clear
+  376  git commit -m "issue-6-user-can-see-history-of-stock"
+  377  git push origin issue-6-user-can-see-history-of-stock
+  378  git switch master
+  379  git switch master
+  380  git pull origin master
+  381  git status
+  382  git add css/
+  383  git status
+  384  git commit -m "changed absolute value to fixed"
+  385  git push origin master
+  386  git pull origin master
+  387  clear
+  388  git branch project-polish
+  389  git switch project-polish
+  390  clear
+  391  git remote set-url origin git@github.com:meetkpatel/stock-watch.git
+  392  cd ..
+  393  mv ajax-project stock-watch
+  394  ls
+  395  cd stock-watch/
+  396  clear
+  397  cd repos/stock-watch/
+  398  clear
+  399  git status
+  400  git add index.html images/
+  401  git status
+  402  git commit -m "Project Polish"
+  403  git push origin project-polish
+  404  git status
+  405  git add css/ images/ index.html js/ 
+  406  git status
+  407  git commit -m "Project Code"
+  408  git push origin project-polish
+  409  git switch master
+  410  git pull origin master
+  411  clear
+  412  git branch project-interfaces
+  413  git switch project-interfaces
+  414  clear
+  415  clear
+  416  cd repos/stock-watch/
+  417  clear
+  418  git status
+  419  git add css/ index.html js/ images/
+  420  git status
+  421  clear
+  422  git commit -m "Completed Project Interface"
+  423  clear
+  424  git push origin project-interfaces
+  425  clear
+  426  git status
+  427  git add js/ css/
+  428  git commit -m "added error handler for 404 and update no-data img width in  Project Interface"
+  429  git push origin project-interfaces
+  430  git status
+  431  git add index.html 
+  432  git commit -m "removed comments from html file in  Project Interface"
+  433  clear
+  434  git push origin project-interfaces
+  435  git switch master
+  436  git pull origin master
+  437  clear
+  438  cd ..
+  439  clear
+  440  cd c0821-code-solutions/
+  441  switch master
+  442  git switch master
+  443  clear
+  444  git branch es6-const-let
+  445  git switch es6-const-let
+  446  clear
+  447  git status
+  448  git add es6-const-let
+  449  git status
+  450  git commit -m "Completed es6-const-let"
+  451  clear
+  452  git push origin es6-const-let
+  453  git switch master
+  454  git branch es6-template-literals
+  455  git switch es6-template-literals
+  456  git add es6-template-literals
+  457  git status
+  458  git commit -m "Completed es6-template-literals"
+  459  git push origin es6-template-literals
+  460  git switch master
+  461  git branch es6-destructuring
+  462  git switch es6-destructuring
+  463  git add es6-destructuring
+  464  git commit -m "Completed es6-destructing"
+  465  git push origin es6-destructuring
+  466  git switch master
+  467  clear
+  468  git branch es6-arrow-functions
+  469  git switch es6-arrow-functions
+  470  clear
+  471  clear
+  472  git add es6-arrow-functions/
+  473  got status
+  474  git status
+  475  clear
+  476  git commit -m "Completed es6-arrow-functions"
+  477  git push origin es6-arrow-functions
+  478  git switch master
+  479  git status
+  480  git switch master
+  481  git switch es6-template-literals
+  482  git add es6-template-literals/
+  483  git status
+  484  git commit -m "Changes done."
+  485  git push origin es6-template-literals/
+  486  git status
+  487  git push origin es6-template-literals
+  488  git switch master
+  489  git switch es6-arrow-functions
+  490  git add es6-arrow-functions
+  491  git status
+  492  git commit -m "Removed Comments."
+  493  git push origin es6-arrow-functions
+  494  git switch master
+  495  git pull origin master
+  496  cd repos/c0821-code-solutions/
+  497  clear
+  498  git switch es6-arrow-functions
+  499  clear
+  500  git switch master
+  501  git pull origin master
+  502  git switch es6-arrow-functions
+  503  git switch master
+  504  clear
+  505  whoami
+  506  clear
+  507  git branch command-line-basics
+  508  git switch command-line-basics
+  509  clear
+  510  cd ..
+  511  cd c0821-code-solutions/command-line-basics/
+  512  clear
+  513  pwd
+  514  clear
+  515  man man
+  516  clear
+  517  clear
+  518  man man
+  519  man car
+  520* cle
+  521  man cat
+  522  clear
+  523  cat laziness.txt 
+  524  cat impatience.txt 
+  525  cat hubris.txt 
+  526  ls
+  527  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  528  ls
+  529  cat three-virtues.txt 
+  530  clear
+  531  man ls
+  532  ls -F
+  533  ls 
+  534  ls -a
+  535  clear
+  536  ls lfz-staff/
+  537  ls lfz-staff/ -a
+  538  ls lfz-staff -a
+  539  clear
+  540  ls lfz-staff/
+  541  ls -a lfz-staff/
+  542  ls -F lfz-staff/
+  543  ls -aF lfz-staff/
+  544  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  545  cat lfz-staff/contents.txt 
+  546  clear
+  547  man pwd
+  548  pwd > i-was-here.txt
+  549  cat i-was-here.txt 
+  550  ls
+  551  clear
+  552  man echo
+  553  echo Hello, World!
+  554  echo 'Hello, World!'
+  555  echo 'Hello, World!' > hello.txt
+  556  cat hello.txt 
+  557  clear
+  558  ls
+  559  clear
+  560  man touch
+  561  touch tag-youre-it.txt
+  562  ls
+  563  touch snoot/boop.txt
+  564  ls snoot/
+  565  clear
+  566  man mkdir
+  567  uired.  If this option is not specified, the full path prefix of each operand must already
+  568  man mkdir
+  569  mkdir parent
+  570  ls
+  571  mkdir -p parent/child/grandchild
+  572  ls -a parent/child/grandchild/
+  573  ls -aF parent/child/grandchild/
+  574  ls -aF
+  575  touch parent/child/grandchild/ .gitkeep
+  576  ls -aF parent/child/grandchild/
+  577  ls -a parent/child/grandchild/
+  578  clear
+  579  touch parent/child/grandchild/.gitkeep
+  580  ls -a parent/child/grandchild/
+  581  clear
+  582  man mv
+  583  mv pokiemans pokemon
+  584  ls
+  585  man rm
+  586  cat lol.txt 
+  587  rm lol.txt 
+  588  ls
+  589  rm -r kill-me/
+  590  ls
+  591  clear
+  592  man cp
+  593  clear
+  594  cat and-then.txt 
+  595  cp and-then.txt no-and-then.txt
+  596  ls
+  597  cat no-and-then.txt 
+  598  clear
+  599  man hi
+  600  man history
+  601  man history
+  602  history
+  603  clear
+  604  history > command-history.txt
