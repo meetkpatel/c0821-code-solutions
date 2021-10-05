@@ -2,10 +2,6 @@
   animation: fadeIn 0.5s;
 }
 
-/* h4 {
-  width: 100%;
-} */
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
