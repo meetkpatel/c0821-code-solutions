@@ -11,5 +11,5 @@ if (process.argv[3] === 'plus') {
 } else if (process.argv[3] === 'over') {
   console.log('Result', divide.divide(process.argv[2], process.argv[4]));
 } else {
-  console.log('Not valid operations');
+  console.log('Not a valid operation');
 }
