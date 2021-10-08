@@ -1,9 +1,9 @@
+
 var express = require('express');
 const app = express();
 var jsonExpress = express.json();
 var nextId = 1;
 var grades = {};
-
 app.use(jsonExpress);
 app.get('/api/grades', function (req, res) {
   var gradesArr = [];
@@ -16,6 +16,7 @@ app.get('/api/grades', function (req, res) {
 app.post('/api/grades', function (req, res) {
   var reqBody = req.body;
   reqBody.id = nextId;
+  grades.nextId = reqBody;
   nextId++;
   res.status(201);
   res.json(reqBody);
