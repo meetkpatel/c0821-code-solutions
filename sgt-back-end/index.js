@@ -89,7 +89,8 @@ app.post('/api/grades/', (req, res, next) => {
   const dbValues = [reqBody.name, reqBody.course, reqScore];
   db.query(sql, dbValues)
     .then(result => {
-      res.status(201).send('Row Inserted');
+      const insertedRow = result.rows[0];
+      res.status(201).json(insertedRow);
     })
     .catch(err => {
       console.error(err);
@@ -136,12 +137,13 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
   db.query(sql, dbValues)
     .then(result => {
       const updatedRowCount = result.rowCount;
+      const updatedRow = result.rows[0];
       if (updatedRowCount === 0) {
         res.status(404).json({
           error: `Cannot find grade with "gradeId" ${gradeId}`
         });
       } else {
-        res.status(200).send('Row Updated');
+        res.status(200).json(updatedRow);
       }
     })
     .catch(err => {
