@@ -1,0 +1,41 @@
+button {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  height: 2.7rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  border-color: black;
+  -webkit-box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 1);
+  box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.voilet {
+  background-color: #351c74;
+  color: white;
+}
+
+.light-voilet {
+  background-color: #674ea7;
+  color: white;
+}
+
+.pink {
+  background-color: #e06666;
+  color: white;
+}
+
+.orange {
+  background-color: #f6b26a;
+  color: black;
+}
+
+.yellow {
+  background-color: #ff0;
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
