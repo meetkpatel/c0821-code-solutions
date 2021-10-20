@@ -1,0 +1,49 @@
+.bar-off {
+  border: 3px black solid;
+  border-radius: 2rem;
+  height: 2rem;
+  width: 5rem;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.circle-off {
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 100%;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bar-on {
+  background-color: rgb(50, 161, 50);
+  border: 3px black solid;
+  border-radius: 2rem;
+  height: 2rem;
+  width: 5rem;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.circle-on {
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 100%;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: relative;
+  top: 0;
+  right: -50px;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
