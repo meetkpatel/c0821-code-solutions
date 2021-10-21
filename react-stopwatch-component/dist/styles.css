@@ -1,0 +1,24 @@
+body {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.circle {
+  display: flex;
+  border: 5px black solid;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fafa {
+  margin-top: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+i {
+  font-size: 1.5rem;
+}
