@@ -1,5 +1,9 @@
 i {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.5rem;
   font-size: 2.2rem;
+  cursor: pointer;
 }
 
 .hidden {
@@ -7,17 +11,16 @@ i {
 }
 
 .nav-menu {
-  padding-left: 0.5rem;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20rem;
   background-color: white;
   height: 100vh;
   width: 20rem;
-  transition: 1s;
+  transition-duration: 0.5s;
 }
 
-.nav-open {
+.fullScreen {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
@@ -26,4 +29,26 @@ i {
 body {
   margin-top: 0;
   margin-right: 0;
+}
+
+a {
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  width: 19.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-open {
+  transform: translateX(20rem);
+}
+
+h1 {
+  padding-left: 0.5rem;
 }
