@@ -12,19 +12,21 @@ export default class DrawerMenu extends React.Component {
   }
 
   render() {
+    let fullScreenDiv = '';
+    let navMenDiv = '';
     if (this.state.navOpen) {
-      this.fullScreenDiv = 'fullScreen';
-      this.navMenDiv = 'nav-menu nav-open';
+      fullScreenDiv = 'fullScreen';
+      navMenDiv = 'nav-menu nav-open';
     } else {
-      this.fullScreenDiv = '';
-      this.navMenDiv = 'nav-menu';
+      fullScreenDiv = '';
+      navMenDiv = 'nav-menu';
     }
     return (
       <div>
-        <div className={this.fullScreenDiv} onClick={this.switchview}>
+        <div className={fullScreenDiv} onClick={this.switchview}>
         </div>
         <i onClick={this.switchview} className="fas fa-bars"></i>
-          <div className={this.navMenDiv}>
+          <div className={navMenDiv}>
           <h1>Choose a game</h1>
           <a onClick={this.switchview}>Red Light Green Light</a>
           <a onClick={this.switchview}>Dalgona Candy</a>
