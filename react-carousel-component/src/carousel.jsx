@@ -10,12 +10,13 @@ export default class Carousel extends React.Component {
   }
 
   clickedRight() {
-
     if ((this.props.images.length - 1) === parseInt(this.state.imageIndex)) {
       this.setState({ imageIndex: 0 });
     } else {
       this.setState({ imageIndex: parseInt(this.state.imageIndex + 1) });
     }
+    this.timeReset();
+    this.componentDidMount();
   }
 
   clickedLeft() {
@@ -24,16 +25,30 @@ export default class Carousel extends React.Component {
     } else {
       this.setState({ imageIndex: this.state.imageIndex - 1 });
     }
-  }
-
-  clickedDot() {
-    clearInterval(this.interval);
-    this.setState({ imageIndex: parseInt(event.target.getAttribute('data-view')) });
+    this.timeReset();
     this.componentDidMount();
   }
 
+  timeReset() {
+    clearInterval(this.interval);
+  }
+
+  clickedDot() {
+    this.setState({ imageIndex: parseInt(event.target.getAttribute('data-view')) });
+    this.timeReset();
+    this.componentDidMount();
+  }
+
+  autoSlid() {
+    if ((this.props.images.length - 1) === parseInt(this.state.imageIndex)) {
+      this.setState({ imageIndex: 0 });
+    } else {
+      this.setState({ imageIndex: parseInt(this.state.imageIndex + 1) });
+    }
+  }
+
   componentDidMount() {
-    this.interval = setInterval(() => this.clickedRight(), 3000);
+    this.interval = setInterval(() => this.autoSlid(), 3000);
   }
 
   render() {
