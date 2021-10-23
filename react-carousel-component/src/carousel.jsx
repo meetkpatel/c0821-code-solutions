@@ -15,8 +15,7 @@ export default class Carousel extends React.Component {
     } else {
       this.setState({ imageIndex: parseInt(this.state.imageIndex + 1) });
     }
-    this.timeReset();
-    this.componentDidMount();
+    this.startTimer();
   }
 
   clickedLeft() {
@@ -25,18 +24,17 @@ export default class Carousel extends React.Component {
     } else {
       this.setState({ imageIndex: this.state.imageIndex - 1 });
     }
-    this.timeReset();
-    this.componentDidMount();
+    this.startTimer();
   }
 
-  timeReset() {
+  startTimer() {
     clearInterval(this.interval);
+    this.interval = setInterval(() => this.autoSlid(), 3000);
   }
 
   clickedDot() {
     this.setState({ imageIndex: parseInt(event.target.getAttribute('data-view')) });
-    this.timeReset();
-    this.componentDidMount();
+    this.startTimer();
   }
 
   autoSlid() {
