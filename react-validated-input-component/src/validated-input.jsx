@@ -16,15 +16,15 @@ export default class Carousel extends React.Component {
     var text = '';
     var textColor = '';
     if (this.state.password.length === 0) {
-      icon = 'fas fa-times';
+      icon = 'fas fa-times times-1-5rem-red';
       text = 'A password is requires.';
       textColor = 'font-red';
     } else if (this.state.password.length < 8) {
-      icon = 'fas fa-times';
+      icon = 'fas fa-times times-1-5rem-red';
       text = 'Your password is too short.';
       textColor = 'font-red';
     } else {
-      icon = 'fas fa-check';
+      icon = 'fas fa-check check-1-5rem-green';
       text = '';
       textColor = 'hidden';
     }

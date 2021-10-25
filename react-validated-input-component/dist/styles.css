@@ -6,12 +6,12 @@ i {
   margin-left: 0.5rem;
 }
 
-.fa-times {
+.times-1-5rem-red {
   font-size: 1.5rem;
   color: red;
 }
 
-.fa-check {
+.check-1-5rem-green {
   font-size: 1.5rem;
   color: rgb(34, 177, 34);
 }
