@@ -1,0 +1,25 @@
+.hidden {
+  display: none !important;
+}
+
+i {
+  margin-left: 0.5rem;
+}
+
+.times-1-5rem-red {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.check-1-5rem-green {
+  font-size: 1.5rem;
+  color: rgb(34, 177, 34);
+}
+
+.font-red {
+  color: red;
+}
+
+.font-green {
+  color: rgb(34, 177, 34);
+}
