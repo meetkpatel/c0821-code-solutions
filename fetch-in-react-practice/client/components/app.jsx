@@ -58,7 +58,7 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        const newTodos = Object.assign(this.state.todos);
+        const newTodos = this.state.todos.slice();
         newTodos[changeIndex] = data;
         this.setState({ todos: newTodos });
       });
