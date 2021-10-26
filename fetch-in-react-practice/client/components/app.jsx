@@ -27,21 +27,6 @@ export default class App extends React.Component {
   }
 
   addTodo(newTodo) {
-    /**
-    * Use fetch to send a POST request to `/api/todos`.
-    * Then 😉, once the response JSON is received and parsed,
-    * add the created todo to the state array.
-    *
-    * Do not mutate the original state array, nor any objects within it.
-    * https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data
-    *
-    * TIP: Be sure to SERIALIZE the todo object in the body with JSON.stringify()
-    * and specify the "Content-Type" header as "application/json"
-    *
-    * TIP: Use Array.prototype.concat to create a new array containing the contents
-    * of the old array, plus the object returned by the server.
-    */
-
     fetch('/api/todos', {
       method: 'POST',
       body: JSON.stringify(newTodo),
@@ -55,50 +40,28 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    /**
-     * Find the index of the todo with the matching todoId in the state array.
-     * Get its "isCompleted" status.
-     * Make a new object containing the opposite "isCompleted" status.
-     * Use fetch to send a PATCH request to `/api/todos/${todoId}`
-     * Then 😉, once the response JSON is received and parsed,
-     * replace the old todo in the state array.
-     *
-     * NOTE: "toggle" means to flip back and forth, so clicking a todo
-     * in the list should "toggle" its isCompleted status back and forth.
-     *
-     * Do not mutate the original state array, nor any objects within it.
-     * https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data
-     *
-     * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
-     * And specify the "Content-Type" header as "application/json"
-     */
-    //   fetch(`api/todos/${todoId}`, {
-    //     method: 'PATCH',
-    //     body: JSON.stringify({
-    //       isCompleted: true
-    //     }),
-    //     headers: {
-    //       'Content-type': 'application/json'
-    //     }
-    //   })
-    //     .then(response => response.json())
-    //     .then(json => console.log(json));
 
+    let newState = null;
+    let changeIndex = null;
     for (let i = 0; i < this.state.todos.length; i++) {
       if (this.state.todos[i].todoId === todoId) {
-        var fetchTodo = this.state.todos[i];
-        fetchTodo.isCompleted = (!fetchTodo.isCompleted);
+        changeIndex = i;
+        newState = { isCompleted: !this.state.todos[i].isCompleted };
       }
     }
     fetch(`api/todos/${todoId}`, {
       method: 'PATCH',
-      body: JSON.stringify(fetchTodo),
+      body: JSON.stringify(newState),
       headers: {
         'Content-type': 'application/json'
       }
     })
       .then(response => response.json())
-      .then(data => this.setState(data));
+      .then(data => {
+        const newTodos = Object.assign(this.state.todos);
+        newTodos[changeIndex] = data;
+        this.setState({ todos: newTodos });
+      });
   }
 
   render() {
