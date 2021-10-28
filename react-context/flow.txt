@@ -1,0 +1,50 @@
+
+User can sign up.
+  -when path is "Sign up" App renders an Auth component
+  -Auth component renders AuthForm component with 2 props
+    -"action" and "onSignIn()"
+  -when user click on "Register" button
+    -handleSubmit() is called
+      -in handleSubmit() reuest method "post" with json body is defined and fetch() is called
+       with url "/api/auth/sign-up"
+  -express server receives the post request
+    -checks for username and password are present in the request body
+    -if username and password are not present
+        -calls ClientError(400, 'username and password are required fields') and retun is throw out
+    -if username and password is present
+        -calls argon2.hash(password) and password is converted into hash
+        -sql insert query is defined to insert username and the converted hash password
+        -if data is inserted status code 201 is send else error code 500 is send
+        -user is directed to sign in page
+
+User can sign in.
+  -when path is "Sign in" App renders an Auth component
+  -Auth component renders AuthForm component with 2 props
+    -"action" and "onSignIn()"
+  -when user click on "Log In" button
+    -handleSubmit() is called
+      -in handleSubmit() reuest method "post" with json body is defined and fetch() is called
+       with url "/api/auth/sign-in"
+  -express server receives the post request
+     -checks for username and password are present in the request body
+      -if username and password are not present
+        -calls ClientError(401, 'username and password are required fields') and retun is throw out
+      -if username and password is present
+        -sql select query is defined with where condition of username and query is executed
+        -if the result.row from query is null ClientError(401, 'invalid login'); is thrown
+        -if user exists
+            -argon2.verify() is called with hashpassword from the databade and the password provided by the user
+            -if its return false
+              -ClientError(401, 'invalid login'); is thrown
+            -if true
+              -userId and username is assign to payload and jwt.sign() with payload and secret tokem for generating a token
+              -token is send in response JSON body
+      -with the response onSignIn() is called with the token and its stored in localstorage
+      -state.user is change to the curent user
+      -render page renders the <Home>
+
+
+User can stay signed in (even if they refresh the page).
+
+
+User can sign out.
