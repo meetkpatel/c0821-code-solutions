@@ -45,6 +45,21 @@ User can sign in.
 
 
 User can stay signed in (even if they refresh the page).
-
+  -componentDidMount() checks in localStorage to see if a token is avaliable
+    -if yes
+      -decodeToken() will assign it to this.state.user and sets isAuthorizing to false.
+    -if no
+      -this.state.user is set to null
+    -afterwards user.state.route is empty string so reander() will reander <Home />
+    -at <Home> it will check this.context.user
+      - if it is null it will will be directed to <Auth />.
+      - if not null renders <Home>
 
 User can sign out.
+  -when user click "Sign out"
+    -it removed the token from local-storage
+    -and sets the current state of user to null.
+  -then page will render
+    -and checks the "path".
+  -this.state.user will be null
+    -it redirects our user to route.path, "sign-in".
