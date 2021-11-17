@@ -1,19 +1,15 @@
 /* exported takeSmaller */
 
 function takeSmaller(queue) {
-  const newArr = [];
   if (queue.peek() === undefined) {
     return undefined;
   }
-  while (!(queue.peek() === undefined)) {
-    newArr.push(queue.dequeue());
+  const firstValue = queue.dequeue();
+  if (queue.peek() === undefined) {
+    return firstValue;
   }
-  if ((newArr.length) === 1) {
-    return newArr[0];
-  }
-  for (let i = 2; i < newArr.length; i++) {
-    queue.enqueue(newArr[i]);
-  }
-  queue.enqueue(Math.max(newArr[0], newArr[1]));
-  return Math.min(newArr[0], newArr[1]);
+  const secondValue = queue.dequeue();
+  const maxValue = Math.max(firstValue, secondValue);
+  queue.enqueue(maxValue);
+  return Math.min(firstValue, secondValue);
 }
