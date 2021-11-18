@@ -1,15 +1,14 @@
 /* exported getTail */
 
 function getTail(list) {
-  let currentData = list;
   if (list.next === null) {
     return list.data;
   }
-  while (currentData) {
-    if (currentData.next) {
-      currentData = currentData.next;
+  while (list) {
+    if (list.next) {
+      list = list.next;
     } else {
-      return currentData.data;
+      return list.data;
     }
   }
 }

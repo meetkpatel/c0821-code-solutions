@@ -2,11 +2,10 @@
 
 function getLength(list) {
 
-  let currentData = list;
   let counter = 0;
-  while (currentData) {
+  while (list) {
     counter++;
-    currentData = currentData.next;
+    list = list.next;
   }
   return counter;
 }
